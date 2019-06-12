@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]{
+    width: 100%;
+    padding: 8px;
+    float: left;
+}
+.grand img{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.akl div img{
+    width: 90%;
+    height: auto;
+    border-radius: 70%;
+    display: block;
+    margin: auto;
+    
+}
+.cen p, .cen b{
+    text-align: center;
+
+}
+.QS{
+    margin-top: 5%;
+    background-color: rgb(178, 212, 91);
+    padding: 15PX;
+    border-radius:20px;
+}
+.tp{
+    margin-top: 1%;
+    background-color: rgb(157, 180, 97);
+    padding: 15PX;
+    border-radius:20px;
+}
+body{
+    background-color:  rgb(199, 185, 156);
+}
+.ll{
+    background-color: rgb(178, 212, 91);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.akl{
+    border-radius: 25px;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 2%;
+    background-color: rgba(97, 117, 47, 0.411);
+
+}
+
+.vid video{
+    display: block;
+    margin: auto;
+    width: 95%;
+}
+
+
+@media only screen and (min-width: 600px){ /* TABLET */
+    .col-t-1{width: 8.33%;}
+    .col-t-2{width: 16.66%;}
+    .col-t-3{width: 25%;}
+    .col-t-4{width: 33.33%;}
+    .col-t-5{width: 41.66%;}
+    .col-t-6{width: 50%;}
+    .col-t-7{width: 58.33%;}
+    .col-t-8{width: 66.66%;}
+    .col-t-9{width: 75%;}
+    .col-t-10{width: 83.33%;}
+    .col-t-11{width: 91.66%;}
+    .col-t-12{width: 100%;}
+    .contenedor{
+        flex-direction: row;
+    }
+    .contenedor img{
+
+        width: 25%;
+    }
+    .ll{
+        background-color: rgb(178, 212, 91);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+
+    
+}
+
+@media only screen and (min-width: 768px){ /* ESCRITORIO */
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+    .contenedor{
+        flex-direction: row;
+    }
+    .contenedor img{
+        width: 25%;
+    }
+    .ll{
+        background-color: rgb(178, 212, 91);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+
+    .vid video{
+        width: 60%;
+    }
+
+}

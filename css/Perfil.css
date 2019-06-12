@@ -1,0 +1,258 @@
+.perfi{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor .fondoperfil{
+    width: 95%;
+    margin: auto;
+    display: block;
+    height: 15vh;
+    background-image: url(../img/BPerfil.jpg);
+    background-size: 100% 100%;
+}
+
+.contenedor .default{
+    width: 30%;
+    margin: auto;
+    display: block;
+    height: auto;
+    position: absolute;
+    bottom: 55%;
+    left: 35%;
+    border:3px solid white;
+    border-radius: 100%;
+}
+
+.fondoperfil p{
+    display: none;
+}
+.username{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 30px;
+    display: block;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+}
+.contenedor .datosP{
+    width: 95%;
+    margin: auto;
+    margin-top: 5px;
+}
+.comple a{
+    text-decoration: none;
+    color: black;
+}
+
+.estado{
+    background-color: rgb(178, 212, 91);
+    margin: auto;
+    border-radius: 15px;
+    text-align: left;
+    margin-top: 0%;
+}
+
+.ofert{
+    background-color: rgb(207, 226, 158);
+    margin: auto;
+    border-radius: 15px;
+    text-align: left;
+     padding: 15px;
+}
+.ventas img{
+    width: 25%;
+    height: auto;
+}
+.ventas p{
+    font-size: 25px;
+}
+.estado p{
+    width: 100%;
+    margin: 10px;
+    padding: 1px;
+    
+}
+
+.comple{
+    background-color: white;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+.comple div {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.opcion img{
+    width: 30%;
+    height: 100%;
+}
+.opcion{
+    padding: 10px;
+    border-radius: 20px; 
+    background-color:  rgb(190, 166, 107);
+}
+.opcion2{
+    padding: 10px;
+    border-radius: 20px; 
+    background-color:  rgb(190, 117, 107);
+}
+
+.opcion2:active{
+    box-shadow: 0 0 10px;
+    color: rgb(24, 20, 20) !important;
+}
+.ventas{
+    background-color: rgb(186, 206, 136);
+    margin: auto;
+    border-radius: 15px;
+    text-align: left;
+     padding: 15px;
+}
+.hc {
+    width: 90%;
+    height: 50%px;
+}
+.ofert a{
+    color: black;
+    text-decoration: none;
+}
+.ofert a p{
+    background-color: rgb(178, 212, 91);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border:  rgb(178, 212, 91) 2px solid;
+}
+.ofert a p:hover{
+    border:  rgba(0, 0, 0, 0.315) 2px solid;
+    
+    box-shadow: 0 0 10px;
+    color: rgba(24, 20, 20, 0.473) !important;
+
+}
+
+.cuadroinfo{
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(178, 212, 91);
+    border:  black 1px solid;
+    margin-bottom: 10px;
+
+
+}
+@media only screen and (min-width: 600px){ /* TABLET */
+    .col-t-1{width: 8.33%;}
+    .col-t-2{width: 16.66%;}
+    .col-t-3{width: 25%;}
+    .col-t-4{width: 33.33%;}
+    .col-t-5{width: 41.66%;}
+    .col-t-6{width: 50%;}
+    .col-t-7{width: 58.33%;}
+    .col-t-8{width: 66.66%;}
+    .col-t-9{width: 75%;}
+    .col-t-10{width: 83.33%;}
+    .col-t-11{width: 91.66%;}
+    .col-t-12{width: 100%;}
+
+    .contenedor .default{
+        bottom: 50%;
+        left: 35%;
+    }
+
+    .username{
+        font-size: 40px;
+    }
+    .contenedor .fondoperfil{
+        width: 95%;
+        margin: auto;
+        display: block;
+        height: 25vh;
+        background-image: url(../img/BPerfil.jpg);
+        background-size: 100% 100%;
+    }
+    .ventas img{
+        width: 15%;
+        height: auto;
+    }
+    .ventas p{
+        font-size: 30px;
+    }
+    .estado p{
+        width: 100%;
+        margin: 10px;
+        padding: 1px;
+        
+    }
+}
+
+@media only screen and (min-width: 768px){ /* ESCRITORIO */
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+
+    .username{
+        display: none !important;
+    }
+    .perfi{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor .fondoperfil{
+        width: 95%;
+        margin: auto;
+        display: block;
+        height: 50vh;
+        background-image: url(../img/BPerfil.jpg);
+        background-size: cover;
+    }
+
+    .fondoperfil p{
+        color: white;
+        font-size: 40px;
+        position: absolute;
+        display: block;
+        left: 30%;
+        bottom: 45%;
+        text-shadow: 5px 5px 5px black;
+    }
+    .contenedor .default{
+        width: 20%;
+        margin: auto;
+        display: block;
+        height: auto;
+        position: absolute;
+        bottom: 40%;
+        left: 10%;
+        border: 5px solid white;
+        border-radius: 100%;
+    }.opcion2:hover{
+        box-shadow: 0 0 10px;
+        color: rgb(24, 20, 20) !important;
+    }
+    .ventas img{
+        width: 15%;
+        height: auto;
+    }
+    .ventas p{
+        font-size: 45px;
+    }
+    .estado p{
+        width: 100%;
+        margin: 10px;
+        padding: 1px;
+        
+    }
+}

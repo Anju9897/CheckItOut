@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="google.com" content="notranslate"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+    <script src="../js/login.js"></script>
+</head>
+<body>
+
+    <div id="login" class="login-box">
+      
+        <h1>Iniciar sesión</h1>
+        <form action="../html/perfil.html" method="GET">
+          <label for="Usuario">Usuario</label>
+          <input type="text" id="Usuario" placeholder="Nombre de Usuario">
+          <label for="pass">Contraseña</label>   
+          <input type="password" id="pass" placeholder="Contraseña">
+          <input id="enter" type="submit" value="Entrar">
+          <a id="BRecuperacion" onclick="muestra_oculta('recuperacion','login')">No recuerdas tu contraseña?</a><br>
+          <a id="BRegistro" onclick="muestra_oculta('registro','login')">No tienes una cuentas, registrate?</a>
+        </form>
+      </div>
+    </div>
+
+    <!-- recuperacion -->
+    <div id="recuperacion" class="login-box">
+      <h1>Recupera tu cuenta</h1>
+      <p>Se enviara un link de restauracion de la contraseña al correo de tu cuenta</p>
+      <form>
+          <label for="correo">Escribe el correo de tu cuenta</label>
+          <input type="email" placeholder="usuario@ejemplo.com">
+          <input id="2" type="submit" value=" enviar ">
+      </form>
+  </div>
+
+
+    <!-- Registros -->
+  <div id="registro" class="login-box">
+      <h2>Datos personales</h2>
+
+      <form action="" method="POST">
+          <label for="Nombre">Nombres</label>
+          <input type="text" id="Nombre">
+          <label for="Apellidos">Apellidos</label>
+          <input type="text" id="Apellidos">
+          <label for="correo">correo</label>
+          <input type="email" >
+          <label for="usuario">usuario</label>
+          <input type="text">
+          <label for="Contraseña">Contraseña</label>
+          <input type="password">
+          <label for="fecha_de_nacimiento">fecha de nacimiento</label>
+          <input type="text" placeholder="dd/mm/aaaa">
+
+          <a class="boton" onclick="muestra_oculta('registroDireccion','registro')">Siguiente</a>
+
+      </form>
+  </div>
+
+  <!-- registro Direccion -->
+  <div id="registroDireccion" class="login-box">
+      <h2>Registro de Direccion</h2>
+
+      <form action="/html/registroTargeta.html" >
+          <label for="pais">Pais</label>
+          <input type="text" placeholder="El Salvador">
+          <label for="Departamento">Departamento</label>
+          <input type="text" placeholder="Sonsonate">
+          <label for="Ciudad">Ciudad</label>
+          <input type="text" placeholder="Sonsonate">
+          <label for="Calle/avenida">Calle/Avenida</label>
+          <input type="text" placeholder="Calle Ing. Jesús Adalberto Díaz Pineda">
+          <a class="boton" onclick="muestra_oculta('RegistroTarjeta','registroDireccion')"> Siguiente </a>
+      </form>
+
+     
+
+  </div>
+
+<!-- registro terjeta -->
+
+  <div id="RegistroTarjeta" class="login-box">
+    <h2>Registro de Tarjetas</h2>
+    <form action="/html/index.html" method="GET">
+        <label for="numero">numero de tarjeta</label>
+        <input type="text" id="numero" placeholder="xxxx-xxxx-xxxx-xxxx">
+        <label for="fecha_exp">Fecha de expirracion</label>
+        <input type="text" placeholder="mm/aa">        
+        <label for="Codigo">codigo de seguridad</label>
+        <input type="text" placeholder="3 o 4 digitos">
+
+        <input id="ingresar" type="submit" value="¡Listo!">
+    </form>
+  </div>
+  <footer>
+      <a href="../index.html"> <img class="col-1 col-t-1 styky2"  src="../img/LogoCIO.png" alt=""></a>
+  </footer>
+</body>
+</html>

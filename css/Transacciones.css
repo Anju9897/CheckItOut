@@ -1,0 +1,98 @@
+.masoscuro .cat{
+    width: 100%;
+    background-color: rgba(102, 80, 37, 0.425);
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.masoscuro h2{
+    border: 5px solid grey;
+    border-radius: 50px;
+    background-color: grey;
+    color: black;
+}
+.masoscuro h2:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+    border-color: lightgrey;
+}
+.infopro{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-content: center;
+}
+
+.infropro .botones{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+.infopro img{
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+
+
+.carito,.vendi{
+    color: red;
+}
+.masoscuro .cat div{
+    display: flex !important;
+    flex-direction: columns !important;
+    margin: auto;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.masoscuro .cat button{
+    width: 50%;
+    margin: 5px;
+    margin-bottom: 10px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: rgb(178, 212, 91);
+    cursor: pointer;
+}
+
+.bolr{
+    color: red;
+}
+
+.bolv{
+    color: blue;
+}
+
+@media only screen and (min-width: 638px){
+    .masoscuro .cat{
+        margin: 15px;
+    }
+
+    .infropro .botones{
+        width: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+    .masoscuro .cat{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .infopro{
+        width: 25%;
+    }
+
+}

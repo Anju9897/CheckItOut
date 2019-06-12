@@ -1,0 +1,266 @@
+nav div{
+    background-color: rgb(48, 44, 44);
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li {
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+}
+nav ul li ul{
+    display: none;
+}
+nav .iconos ul li:active{
+    background-color: rgb(178, 212, 91);
+    cursor: pointer;
+}
+#buscar{
+    width: 50%;
+    margin: auto;
+    padding: 3px;
+}
+nav .clase_busqueda ul form a{
+    padding: 0px;
+    box-shadow: 0;
+    background-color: rgb(48, 44, 44);
+    color: white;
+    float: right;
+    margin-right: 30px;
+}
+nav .clase_busqueda ul form a:active{
+    color: rgb(178, 212, 91);
+}
+
+.styky2{
+    width: 25%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 2000;
+}
+
+
+
+audio{
+    display: block;
+    margin: auto;
+    width: 90%;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px){ /* TABLET */
+    .col-t-1{width: 8.33%;}
+    .col-t-2{width: 16.66%;}
+    .col-t-3{width: 25%;}
+    .col-t-4{width: 33.33%;}
+    .col-t-5{width: 41.66%;}
+    .col-t-6{width: 50%;}
+    .col-t-7{width: 58.33%;}
+    .col-t-8{width: 66.66%;}
+    .col-t-9{width: 75%;}
+    .col-t-10{width: 83.33%;}
+    .col-t-11{width: 91.66%;}
+    .col-t-12{width: 100%;}
+
+    /* nav */
+    nav {
+        margin:  auto;
+        max-width: 100%;
+    }
+    nav ul{
+        list-style: none;
+    }
+    nav ul li{
+        padding: 0;
+    }
+    nav div > ul{
+        display: table;
+        overflow: hidden;
+        width: 100%;
+        background: rgb(48, 44, 44);
+        position: relative;
+    }
+    nav div > ul li{
+        display: table-cell;
+    }
+
+    /*SUB MENU*/
+
+    nav div > ul > li > ul {
+        display: none;
+    }
+    nav div > ul li a, .clase_busqueda{
+        color: white; 
+        display:  block; 
+        line-height:  20px; 
+        padding: 20px; 
+        position: relative;
+        text-align: center;
+        text-decoration:  none;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    nav div > ul > li > ul > li a:hover{
+        background: #5da5a2;
+    }
+    nav div > ul > li > a span{
+        background: rgb(178, 212, 91);
+        display: block; 
+        height: 100%;
+        width: 100%;
+        left: 0;
+        position: absolute; 
+        top: -55PX;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    nav div > ul > li > a span .icon {
+        display: block; 
+        line-height: 60px;
+    }
+    nav div > ul > li> a:hover > span{
+        top:0;
+    } 
+    #buscar{
+        width: 70%;
+        margin: auto;
+        padding: 3px;
+    }
+    .styky2{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 2000;
+    }
+    
+
+    nav .clase_busqueda ul form a{
+        background-color: rgb(48, 44, 44);
+        color: white;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px){ /* ESCRITORIO */
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+
+   /* nav */
+    nav {
+        margin:  auto;
+        max-width: 100%;
+    }
+    .styky{
+        position: sticky;
+        z-index: 2;
+        top: 0;
+    }
+    nav ul{
+        list-style: none;
+    }
+    nav ul li{
+        padding: 0;
+    }
+    nav div > ul{
+        display: table;
+        overflow: hidden;
+        width: 100%;
+        background: rgb(48, 44, 44);
+        position: relative;
+    }
+    nav div > ul li{
+        display: table-cell;
+    }
+
+    nav div > ul > li > ul {
+        display: none;
+    }
+    nav div > ul li a, .clase_busqueda{
+        color: white; 
+        display:  block; 
+        line-height:  20px; 
+        padding: 20px; 
+        position: relative;
+        text-align: center;
+        text-decoration:  none;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    nav div > ul > li > ul > li a:hover{
+        background: #5da5a2;
+    }
+    nav div > ul > li > a span{
+        background:rgb(178, 212, 91);
+        display: block; 
+        height: 100%;
+        width: 100%;
+        left: 0;
+        position: absolute; 
+        top: -55PX;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    nav div > ul > li > a span .icon {
+        display: block; 
+        line-height: 60px;
+    }
+    nav div > ul > li> a:hover > span{
+        top:0;
+    } 
+    #buscar{
+        width: 60%;
+        float: left;
+        padding: 0;
+    }
+
+    .buscar{
+        width: 15%;
+        padding: 0;
+        float: left;
+    }
+
+    nav .clase_busqueda ul form a:hover{
+        color:  rgb(178, 212, 91);
+        cursor: pointer;
+    }
+    
+    .styky2{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 2000;
+    }
+
+    audio{
+        opacity: 0;
+    }
+    audio:hover{
+        opacity: 1;
+    }
+}
